@@ -5,5 +5,9 @@ public class board {
         this.column = column;
         this.row = row;
     }
+
+    public static void initialize(){
+
+    }
 }
 
