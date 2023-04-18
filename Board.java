@@ -5,7 +5,7 @@ public class Board {
         // Setting up squares so that they can hold pieces
         for(int i=0; i<8; i++) {
             for(int j=0; j<8; j++) {
-                board[i][j] = new useSquareForPiece();
+                board[i][j] = new Square();
             }
         }
         // We set up the pawns and kings
