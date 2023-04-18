@@ -8,6 +8,7 @@ public interface DiagonalMovable {
         if (P.b.board[p.x][p.y].isOccupied() && (P.b.board[p.x][p.y].getPiece().color==P.color)){return false;}
         // Now checking if there are any pieces blocking the squares
         int startX, endX, startY, yi;
+        // We will always move from left to right
         startX = Math.min(P.position.x, p.x)+1; endX=Math.max(P.position.x, p.x);
         // if moving from bottomleft to top right or vice versa
         if ((P.position.x<p.x && P.position.y<p.y)||(P.position.x>p.x && P.position.y>p.y)){
