@@ -8,8 +8,8 @@ public class Pawn extends Piece{
     }
     @Override
     public void move(Pair p){
-        // Check if we have same colored piece at the end square
-        if (b.board[p.x][p.y].isOccupied() && (b.board[p.x][p.y].getPiece().color==color)){invalidMove(p);return;}
+        // Check if we have a piece at the end square
+        if (b.board[p.x][p.y].isOccupied()){invalidMove(p);return;}
         // Check if the move is legal for a pawn
         if (!isLegal(p)){invalidMove(p);}
         else{
