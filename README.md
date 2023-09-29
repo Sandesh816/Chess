@@ -1,4 +1,5 @@
-(Chess_Project_Team10_Final) has the working program.
+(Chess_Project_Team10_Final) is the main working program.
+
 This is our Chess project. We have attempted to make a variation of a regular Chess game. Initially, when we set up the Board, we will only have kings
 and pawns set up in their usual location. Then, we will allow players to locate their remaining pieces (queen, knights, etc.) wherever they want
 on their side of the board. 
