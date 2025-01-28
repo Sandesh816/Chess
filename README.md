@@ -1,15 +1,34 @@
+**AI-Powered Chess Game**
+
 (Chess_Project_Team10_Final) is the main working program. Brain.java (inside src) does the most of the work.
 
-This is our Chess project. We have attempted to make a variation of a regular Chess game. Initially, when we set up the Board, we will only have kings
-and pawns set up in their usual location. Then, we will allow players to locate their remaining pieces (queen, knights, etc.) wherever they want
-on their side of the board. 
+This project is a Java-based Chess application with:
+	•	*AI-driven move suggestions via a custom evaluation engine*
+	•	*Randomized opening variants for a novel twist on standard chess*
+	•	*Balanced odds variants (including dynamic piece score adjustments)*
+	•	*A Graphical User Interface (GUI) built using Java Swing*
+	•	*Comprehensive chess rules (castling, en passant, stalemate, threefold repetition, and so on)*
 
-But be wary though, if you place your queen too close to the enemy side, it can easily be attacked or captured. Or if you place your pieces too 
-defensively, then you opponent can get advantage even before the game starts because of their active pieces. So, it will bring an interesting
-dynamic in the game. Also, if both players agree, then they can press the Randomize button, which will bring a luck factor in the game. Randomize will
-place the remaining pieces in random location, and (maybe) bring out an interesting capture fest.
+The core AI logic is contained in the Brain class, which uses a Minimax-like approach with search to evaluate moves. The user interface is handled by Main, which sets up the board, handles mouse input, and orchestrates the gameplay loop.
 
-Our variation of the game will also include one key element-- Hints. Each player will have three hint options throughout the game. Players can press
-hint anytime, and the best move suggested by stockfish will be shown on the board. As both players have equal number of hints and they can press
-it anytime during the game, the game will still remain fair, and it will be strategic on when the players want to use the hint.
+*Features*
+	•	Classic and Randomized Modes
+	  •	Classic: Standard chess initial setup.
+	  •	Random: Randomizes the initial piece positions, including special promotions.
+	•	AI Move Suggestions (Hint System)
+	  •	Click on the “Hint” button in the GUI to see the best move as evaluated by the AI.
+	•	Visual Move Selection & Highlights
+	  •	Select a piece, see possible valid moves highlighted, and click again to move.
+	•	Balanced Odds Variants
+	  •	Piece values can change slightly as the game progresses (opening vs. endgame).
+	•	Chess Rules
+	  •	Threefold repetition: Declares a draw when a board state repeats three times.
+	  •	Check, Checkmate, Stalemate.
+	  •	Castling (both King-side and Queen-side).
+	  •	Promotion for pawns reaching the last rank.
+	  •	En passant captures (in standard mode).
+	•	Game Recording
+	  •	At game end, you can download a record of the moves.
+
+   
 
